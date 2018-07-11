@@ -1,0 +1,31 @@
+package com.java1234.dao;
+
+import com.java1234.entity.Blogger;
+
+/**
+ * ????Dao???
+ * @author java1234_С??
+ *
+ */
+public interface BloggerDao {
+
+	/**
+	 * ??????????
+	 * @return
+	 */
+	public Blogger find();
+	
+	/**
+	 * ??????????????
+	 * @param userName
+	 * @return
+	 */
+	public Blogger getByUserName(String userName);
+	
+	/**
+	 * ??????????
+	 * @param blogger
+	 * @return
+	 */
+	public Integer update(Blogger blogger);
+}
